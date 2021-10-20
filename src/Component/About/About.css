@@ -1,0 +1,7 @@
+/* background image of count down  */
+.countdown{
+    background-image: url(https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

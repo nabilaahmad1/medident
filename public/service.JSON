@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "serviceName": "Crowns Bridges",
+    "serviceDetails": "If you have one or more missing teeth, your dental professional may recommend that you get artificial replacements. There are removable options like dentures that you can take out and clean, but those can slide around, shift, or fall out – which understandably won't fly for many people. And that's why there are crowns affixed to dental implants and bridges which function more like your actual teeth.",
+    "serviceImg": "https://image.freepik.com/free-vector/dental-implants-anatomy-closeup-model_1284-15064.jpg",
+    "doctorName": "Mathew Jonson",
+    "doctorImg": "https://image.freepik.com/free-photo/hospital-healthcare-workers-covid-19-treatment-concept-young-doctor-scrubs-making-daily-errands-clinic-listening-patient-symptoms-look-camera-professional-physician-curing-diseases_1258-57233.jpg",
+    "position": "Head of The Team",
+    "noOfYear": "20 years",
+    "pricing": 1000
+  },
+  {
+    "id": 2,
+    "serviceName": "Implants",
+    "serviceDetails": "A dental implant is a surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, or facial prosthesis or to act as an orthodontic anchor. The basis for modern dental implants is a biologic process called osseointegration, in which materials such as titanium or zirconia form an intimate bond to bone. The implant fixture is first placed so that it is likely to osseointegrate, then a dental prosthetic is added.",
+    "serviceImg": "https://image.freepik.com/free-photo/female-patient-visiting-dentist-foe-teeth-hygiene_1303-26381.jpg",
+    "doctorName": "Andrea Michale",
+    "doctorImg": "https://image.freepik.com/free-photo/covid-19-preventing-virus-health-healthcare-workers-quarantine-concept-professional-female-nurse-doctor-blue-scrubs-medical-mask-gloves-writing-down-patient-info-using-clipboard_1258-57303.jpg",
+    "position": "Ortodontist",
+    "noOfYear": "15 years",
+    "pricing": 2000
+  },
+  {
+    "id": 3,
+    "serviceName": "Teeth Whitening",
+    "serviceDetails": "Tooth whitening or tooth bleaching is the process of lightening the color of human teeth. Whitening is often desirable when teeth become yellowed over time for a number of reasons, and can be achieved by changing the intrinsic or extrinsic color of the tooth enamel. The chemical degradation of the chromogens within or on the tooth is termed as bleaching.",
+    "serviceImg": "https://image.freepik.com/free-photo/dentist-with-smile_144627-886.jpg",
+    "doctorName": "Martha Stuart",
+    "doctorImg": "https://image.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
+    "position": "Ortodontist",
+    "noOfYear": "5 yearss",
+    "pricing": 500
+  },
+  {
+    "id": 4,
+    "serviceName": "Root Canals",
+    "serviceDetails": "A root canal is performed when the endodontist removes the infected pulp and nerve in the root of the tooth, cleans and shapes the inside of the root canal, then fills and seals the space. Afterward, your dentist will place a crown on the tooth to protect and restore it to its original function.",
+    "serviceImg": "https://image.freepik.com/free-vector/healthy-teeth-anatomy-structure-illustration_87771-10488.jpg",
+    "doctorName": "Andrew Jonson",
+    "doctorImg": "https://image.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg",
+    "position": "Ortodontist",
+    "noOfYear": "6 years",
+    "pricing": 800
+  },
+  {
+    "id": 5,
+    "serviceName": "Wisdom Teeths",
+    "serviceDetails": "Sometimes, wisdom teeth that have become impacted or haven't fully broken through the surface of the gum can cause dental problems. Food and bacteria can get trapped around the edge of the wisdom teeth, causing a build-up of plaque",
+    "serviceImg": "https://image.freepik.com/free-photo/heal-specialist-procedure-cure-patient_1301-3116.jpg",
+    "doctorName": "Jack Hawking",
+    "doctorImg": "https://image.freepik.com/free-photo/african-american-medical-doctor-man-with-mask-isolated-gray-background_231208-2230.jpg",
+    "position": "Ortodontist",
+    "noOfYear": "7 years",
+    "pricing": 900
+  },
+  {
+    "id": 6,
+    "serviceName": "Braces",
+    "serviceDetails": "Dental braces (also known as braces, orthodontic cases, or cases) are devices used in orthodontics that align and straighten teeth and help position them with regard to a person's bite, while also aiming to improve dental health. Braces also fix gaps. ",
+    "serviceImg": "https://image.freepik.com/free-photo/beautiful-young-woman-with-teeth-braces_155003-1047.jpg",
+    "doctorName": "Anne Miller",
+    "doctorImg": "https://image.freepik.com/free-photo/young-woman-doctor-white-coat-reading-about-patient-near-window_144627-65905.jpg",
+    "position": "Ortodontist",
+    "noOfYear": "9 yers",
+    "pricing": 700
+  }
+]

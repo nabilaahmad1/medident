@@ -1,0 +1,10 @@
+/* common css  */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/* banner details  */
+.title{
+    color: rgb(16, 16, 88);
+}

@@ -1,0 +1,12 @@
+/* navbar links align  */
+.navbar-align{
+    align-items: flex-end;
+    flex-grow: unset;
+}
+/* title  */
+.navbar-light .title{
+    color: rgb(16, 16, 88);
+}
+.navbar-light .title:hover{
+    color: rgb(16, 16, 88);
+}

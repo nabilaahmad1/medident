@@ -1,0 +1,6 @@
+/* list style of services  */
+ul li {
+    list-style: none;
+    text-align: left;
+    line-height: 40px;
+}
