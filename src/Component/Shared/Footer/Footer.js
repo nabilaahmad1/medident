@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/tooth.png';
 import './Footer.css';
 
@@ -21,14 +22,15 @@ const Footer = () => {
                 <div className="col-lg-4 col-md-6 col-12">
                     <p className="title fs-3 lh-base text-start ms-5">Services</p>
                     <ul className="text-secondary">
-                        <li>Dental Implants</li>
-                        <li>Braces</li>
-                        <li>Visdon Theet</li>
-                        <li>Porcelain Veneers</li>
-                        <li>Teeth Whitening</li>
-                        <li>Dental Bridges</li>
+                        <Link to="/services"><li>Dental Implants</li></Link>
+                        <Link to="/services"><li>Braces</li></Link>
+                        <Link to="/services"><li>Visdon Theet</li></Link>
+                        <Link to="/services"><li>Porcelain Veneers</li></Link>
+                        <Link to="/services"><li>Teeth Whitening</li></Link>
+                        <Link to="/services"><li>Dental Bridges</li></Link>
                     </ul>
                 </div>
+                {/* open time table  */}
                 <div className="col-lg-4 col-md-6 col-12">
                     <p className="title fs-3 lh-base text-start ms-5">Opening Hours</p>
                     <table className="table text-secondary">

@@ -3,10 +3,11 @@ import React from 'react';
 const Appointment = () => {
     return (
         <div className="container-fluid my-5 py-5">
-            {/* feature heading  */}
+            {/* heading  */}
             <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder">Appointment</h1>
             </div>
+            {/* appointment form  */}
             <div className="container">
                 <form className="row g-3">
                     <div className="col-md-6">

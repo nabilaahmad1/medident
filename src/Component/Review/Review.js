@@ -3,7 +3,7 @@ import React from 'react';
 const Review = () => {
     return (
         <div className="container-fluid my-5">
-            {/* feature heading  */}
+            {/*  heading  */}
             <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder">Reviews</h1>
             </div>

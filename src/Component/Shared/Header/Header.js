@@ -26,12 +26,13 @@ const Header = () => {
                         <NavLink className="nav-link " to="/services">Services</NavLink>
                         <NavLink className="nav-link " to="/doctors">Doctors</NavLink>
                         <NavLink className="nav-link " to="/appointment">Appointment</NavLink>
+                        {/* checking user name to show header  */}
                         {user?.email ?
                             <button onClick={logOut} type="button" className="btn btn-primary rounded-pill px-3 me-3">Log Out</button> :
                             <NavLink className="nav-link" to="/login">login</NavLink>
                         }
                         <span className="navbar-text">
-                            User <a href="#login">{user?.displayName}</a>
+                            <a href="#login">{user?.displayName}</a>
                         </span>
                     </div>
                 </div>

@@ -10,6 +10,7 @@ const Login = () => {
             <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder">Login</h1>
             </div>
+            {/* login form  */}
             <form className="container" onSubmit={signInWithEmail}>
                 <div className="row mb-3">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>

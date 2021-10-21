@@ -10,7 +10,7 @@ const About = () => {
                 <div className="col-lg-6 col-12">
                     <img src={sideimg} alt="" className="img-fluid w-100 h-100" />
                 </div>
-                {/* service heading  */}
+                {/* about us section  */}
                 <div className="col-12 col-lg-6 my-auto py-5" style={{ backgroundColor: "#e3f2fd" }}>
                     <h1 className="title lh-base fw-bolder">About Us</h1>
                     <p className="text-secondary lh-sm mt-3">In our friendly dental practice we believe in a professional, caring and individualized approach for each of our patients. Our patients’ comfort is our main concern and you can trust us to provide the best possible care of your oral health. We provide complete family dentistry including cosmetic dentistry, implants, crowns and bridges, dentures, periodontics, orthodontics, oral surgery and endodontics. Our staff are experienced, dental professionals who wish to make every patients visit to our office a positive, pleasant experience.</p>
@@ -22,6 +22,7 @@ const About = () => {
                     </Link>
                 </div>
             </div>
+            {/* count down section  */}
             <div className="row countdown mt-5">
                 <div className="col-lg-4 col-md-6 col-12">
                     <i className="fas fa-x-ray fs-1 title lh-base mt-3"></i>

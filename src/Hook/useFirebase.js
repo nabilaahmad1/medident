@@ -16,10 +16,12 @@ const useFirebase = () => {
     const handleEmail = e => {
         setEmail(e.target.value);
     }
+
     // to set password
     const handlePassword = e => {
         setPassword(e.target.value);
     }
+
     // to set name
     const handleName = e => {
         setName(e.target.value);
@@ -32,11 +34,14 @@ const useFirebase = () => {
 
             })
     }
+
     // create accout with email and password
     const createUserWithEmail = (e) => {
         // avoid default browser reloads 
         e.preventDefault();
         setIsLoading(true);
+
+        // checking password validity 
         if (password.length < 6) {
             setError("Your password length should be 6 or more than 6 charecter long ");
             return;
@@ -45,6 +50,7 @@ const useFirebase = () => {
             setError("At least use one upper case in your password");
             return;
         }
+
         createUserWithEmailAndPassword(auth, email, password, name)
             .then((result) => {
                 setUser(result.user);
@@ -63,6 +69,7 @@ const useFirebase = () => {
     const signInWithEmail = (e) => {
         e.preventDefault();
         setIsLoading(true);
+
         signInWithEmailAndPassword(auth, email, password, name)
             .then((result) => {
                 setUser(result.user);
@@ -81,6 +88,7 @@ const useFirebase = () => {
     const signInWithGoogle = () => {
         setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
+
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 setUser(result.user)
@@ -98,9 +106,7 @@ const useFirebase = () => {
             } else {
                 setUser({})
             }
-
             setIsLoading(false);;
-
         });
         return () => unsubsribed;
     }, [])
@@ -110,12 +116,12 @@ const useFirebase = () => {
         setIsLoading(true);
         signOut(auth)
             .then(() => {
-
             })
             .finally(() => {
                 setIsLoading(false);;
             });
     }
+
     return {
         user,
         error,

@@ -10,6 +10,7 @@ const Register = () => {
             <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder">Register</h1>
             </div>
+            {/* registration from  */}
             <div className="container">
                 <form className="row g-3" onSubmit={createUserWithEmail}>
                     <div className="col-12">
