@@ -5,97 +5,32 @@ import initializeAuthentication from "../Firebase/firebase.init";
 initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [name, setName] = useState("");
-    const [error, setError] = useState("");
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
-
-    // to set email 
-    const handleEmail = e => {
-        setEmail(e.target.value);
-    }
-
-    // to set password
-    const handlePassword = e => {
-        setPassword(e.target.value);
-    }
-
-    // to set name
-    const handleName = e => {
-        setName(e.target.value);
-    }
+    const googleProvider = new GoogleAuthProvider();
 
     // update profile 
-    const setUserName = () => {
+    const setUserName = (name) => {
         updateProfile(auth.currentUser, { displayName: name })
             .then(result => {
-
+                const newUser = { ...user, displayName: name };
+                setUser(newUser)
             })
     }
 
     // create accout with email and password
-    const createUserWithEmail = (e) => {
-        // avoid default browser reloads 
-        e.preventDefault();
-        setIsLoading(true);
-
-        // checking password validity 
-        if (password.length < 6) {
-            setError("Your password length should be 6 or more than 6 charecter long ");
-            return;
-        }
-        if (!/(?=.*?[A-Z])/.test(password)) {
-            setError("At least use one upper case in your password");
-            return;
-        }
-
-        createUserWithEmailAndPassword(auth, email, password, name)
-            .then((result) => {
-                setUser(result.user);
-                setError("");
-                setUserName();
-            })
-            .catch(error => {
-                setError(error.massage);
-            })
-            .finally(() => {
-                setIsLoading(false);;
-            });
+    const createUserWithEmail = (email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // sign in with email and password 
-    const signInWithEmail = (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-
-        signInWithEmailAndPassword(auth, email, password, name)
-            .then((result) => {
-                setUser(result.user);
-                setError("");
-                setUserName();
-            })
-            .catch(error => {
-                setError(error.massage);
-            })
-            .finally(() => {
-                setIsLoading(false);;
-            });
+    const signInWithEmail = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password)
     }
 
     // sign in with google 
     const signInWithGoogle = () => {
-        setIsLoading(true);
-        const googleProvider = new GoogleAuthProvider();
-
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user)
-            })
-            .finally(() => {
-                setIsLoading(false);;
-            });
+        return signInWithPopup(auth, googleProvider)
     }
 
     // user state change 
@@ -116,6 +51,7 @@ const useFirebase = () => {
         setIsLoading(true);
         signOut(auth)
             .then(() => {
+                setIsLoading(true);
             })
             .finally(() => {
                 setIsLoading(false);;
@@ -124,12 +60,12 @@ const useFirebase = () => {
 
     return {
         user,
-        error,
-        handleName,
+        setUser,
+        isLoading,
+        setIsLoading,
+        setUserName,
         createUserWithEmail,
         signInWithEmail,
-        handleEmail,
-        handlePassword,
         signInWithGoogle,
         logOut
     }
